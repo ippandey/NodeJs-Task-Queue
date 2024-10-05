@@ -3,8 +3,8 @@
 ## Requirements:
 
 - Node.js
-- Redis (optional for a more scalable queue)
-- PM2 (optional for clustering)
+- Redis 
+- PM2 
 
 ## Setup:
 
