@@ -3,7 +3,13 @@
 ## Requirements:
 
 - Node.js
-- PM2 
+- PM2
+
+## Prerequisites
+1. Install **Node.js** from [Node.js Official Website](https://nodejs.org/).
+2. Install **PM2** (for running clusters):
+   ```bash
+   npm install pm2 -g
 
 ## Setup:
 
