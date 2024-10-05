@@ -11,18 +11,6 @@
 1. Clone the repository.
 2. Run `npm install` to install the required dependencies.
 
-## Project Structure
-nodejs-task-queue/
-├── index.js             # Main server file
-├── task.js              # Task logging function
-├── queue.js             # Task queuing logic
-├── task_logs.txt        # Log file for task completion (optional, for example purposes)
-├── package.json         # Node.js dependencies and configuration
-├── README.md            # Project documentation
-├── images/              # Any screenshots you include in your README.md
-    ├── task-processed.png
-    ├── rate-limit-exceeded.png
-
 
 ## Running the Application:
 
