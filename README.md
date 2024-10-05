@@ -3,7 +3,6 @@
 ## Requirements:
 
 - Node.js
-- Redis 
 - PM2 
 
 ## Setup:
@@ -29,7 +28,7 @@
 - Task queuing: Tasks exceeding the rate limit are queued and executed based on the limits.
 
 ## Approach and Steps Followed
-In this project, I was tasked with developing a Node.js API that efficiently handles user tasks while implementing rate limiting and queuing mechanisms. The objective was to ensure that each user could only process one task per second and a maximum of twenty tasks per minute. Any requests exceeding this limit should be queued for later execution, ensuring no requests are lost.
+In this project, I developed a Node.js API that efficiently handles user tasks while implementing rate limiting and queuing mechanisms. The objective was to ensure that each user could only process one task per second and a maximum of 20 tasks per minute. Any requests exceeding this limit should be queued for later execution, ensuring no requests are lost.
 
 ## Step 1: Requirement Analysis
 I began by thoroughly analyzing the assignment requirements, which specified the need for a task function, rate limiting per user ID, and a queuing system. I documented the specifications, which helped outline the core features and functionalities needed in the API.
@@ -44,7 +43,7 @@ Created a structured project layout to keep the codebase organized and maintaina
 With the foundational setup complete, I moved on to designing the API:
 
 Created an index.js file for the main server logic, where I set up the Express application and defined routes.
-Implemented a POST route /task to accept user requests for task processing.
+Implemented a POST route /api/v1/task to accept user requests for task processing.
 ## Step 4: Implementing Rate Limiting
 To enforce the specified rate limits, I utilized the express-rate-limit package. This involved:
 
@@ -76,4 +75,4 @@ Server Crashes and Handling Failures:
 Challenge: While testing, I noticed that unexpected server crashes could lead to loss of queued tasks.
 Solution: To mitigate this, I ensured that tasks were logged immediately upon processing, and I used PM2 for clustering, which improved the resilience of the application. PM2’s restart capabilities also ensured that the API could recover gracefully from any unexpected failures.
 Conclusion
-By following this systematic approach, I successfully developed a robust Node.js API that meets the assignment requirements for task queuing and rate limiting. The solution is not only efficient but also scalable, capable of handling multiple user requests seamlessly. Through rigorous testing and addressing challenges head-on, I gained valuable experience in building scalable applications using Node.js.
+By following this systematic approach, I successfully developed a Node.js API that meets the assignment requirements for task queuing and rate limiting. The solution is not only efficient but also scalable, capable of handling multiple user requests seamlessly. Through rigorous testing and addressing challenges head-on, I gained valuable experience in building scalable applications using Node.js.
