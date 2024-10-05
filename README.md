@@ -11,6 +11,15 @@
 1. Clone the repository.
 2. Run `npm install` to install the required dependencies.
 
+## Project Structure
+nodejs-task-queue/
+├── index.js           # Main server file
+├── task.js            # Task logging function
+├── queue.js           # Task queuing logic
+├── task_logs.txt      # Log file for task completion
+├── package.json       # Dependencies and scripts
+├── README.md          # Project documentation
+
 ## Running the Application:
 
 1. Start the server by running `node index.js`.
@@ -18,7 +27,7 @@
 
 ## API Endpoint:
 
-- `POST /task`
+- `POST /api/v1/task`
   - **Body**: `{ "user_id": "123" }`
   - The task is processed and the result is logged in `task_logs.txt`.
 
